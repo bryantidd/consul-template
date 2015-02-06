@@ -69,7 +69,7 @@ func (d *HealthServices) Fetch(client *api.Client, options *api.QueryOptions) (i
 
 		services = append(services, &HealthService{
 			Node:    entry.Node.Node,
-			Address: entry.Node.Address,
+			Address: entry.Service.Address,
 			ID:      entry.Service.ID,
 			Name:    entry.Service.Service,
 			Tags:    tags,
