@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	dep "github.com/hashicorp/consul-template/dependency"
+	dep "github.com/bryantidd/consul-template/dependency"
 )
 
 // datacentersFunc returns or accumulates datacenter dependencies.
