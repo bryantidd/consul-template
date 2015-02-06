@@ -477,12 +477,13 @@ func TestParseHealthServices_nameAndDataCenter(t *testing.T) {
 
 func TestServiceTagsContains(t *testing.T) {
 	s := &HealthService{
-		Node:    "node",
-		Address: "127.0.0.1",
-		ID:      "id",
-		Name:    "name",
-		Tags:    []string{"foo", "baz"},
-		Port:    1234,
+		Node:           "node",
+		Address:        "127.0.0.1",
+		ID:             "id",
+		Name:           "name",
+		Tags:           []string{"foo", "baz"},
+		ServiceAddress: "127.0.0.1",
+		Port:           1234,
 	}
 	if !s.Tags.Contains("foo") {
 		t.Error("expected Contains to return true for foo.")
