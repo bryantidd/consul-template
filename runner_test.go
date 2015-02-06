@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	dep "github.com/hashicorp/consul-template/dependency"
+	dep "github.com/bryantidd/consul-template/dependency"
 	"github.com/hashicorp/consul-template/test"
 	"github.com/hashicorp/consul-template/watch"
 )
