@@ -8,7 +8,7 @@ import (
 	"sync"
 	"text/template"
 
-	dep "github.com/hashicorp/consul-template/dependency"
+	dep "github.com/bryantidd/consul-template/dependency"
 )
 
 type Template struct {
