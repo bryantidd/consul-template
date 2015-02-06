@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	dep "github.com/hashicorp/consul-template/dependency"
+	dep "github.com/bryantidd/consul-template/dependency"
 	"github.com/hashicorp/consul-template/test"
 )
 
