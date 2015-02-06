@@ -27,8 +27,8 @@ type HealthService struct {
 	Address        string
 	ID             string
 	Name           string
-	ServiceAddress string
 	Tags           ServiceTags
+	ServiceAddress string
 	Port           uint64
 }
 
@@ -73,8 +73,8 @@ func (d *HealthServices) Fetch(client *api.Client, options *api.QueryOptions) (i
 			Address:           entry.Node.Address,
 			ID:                entry.Service.ID,
 			Name:              entry.Service.Service,
-			ServiceAddress:    entry.Service.ServiceAddress,
 			Tags:              tags,
+			ServiceAddress:    entry.Service.Address,
 			Port:              uint64(entry.Service.Port),
 		})
 	}
